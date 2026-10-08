@@ -1,0 +1,144 @@
+{
+  "schema": 2,
+  "name": "scaling-n12-q1",
+  "group": "scaling",
+  "instance_file": "campaign/290-scaling-n12-q1.json",
+  "status": "checked",
+  "errors": [],
+  "instance": {
+    "nodes": 12,
+    "capacity": 36,
+    "recipes": 12,
+    "contractive": true,
+    "max_degree": 2,
+    "metadata": {
+      "family": "structural",
+      "profile": 2,
+      "shape": "((((), ()),), ((), ((), ((), ()))))"
+    }
+  },
+  "prepared": {
+    "exact_mode": true,
+    "cost": null,
+    "root_state": null,
+    "spill_edges": [],
+    "events": [],
+    "event_check": null,
+    "certificate": {
+      "schema": 1,
+      "instance": "scaling-n12-q1",
+      "exact_mode": true,
+      "contractive": true,
+      "capacity": 36,
+      "root": "v11",
+      "root_state": null,
+      "terminal_cost": null,
+      "states": {
+        "v10|32|36": {
+          "cost": null,
+          "choice": null
+        },
+        "v10|64|36": {
+          "cost": null,
+          "choice": null
+        },
+        "v11|32|36": {
+          "cost": null,
+          "choice": null
+        },
+        "v11|64|36": {
+          "cost": null,
+          "choice": null
+        },
+        "v2|32|36": {
+          "cost": null,
+          "choice": null
+        },
+        "v2|64|36": {
+          "cost": null,
+          "choice": null
+        },
+        "v3|32|36": {
+          "cost": null,
+          "choice": null
+        },
+        "v3|64|36": {
+          "cost": null,
+          "choice": null
+        }
+      }
+    },
+    "certificate_check": {
+      "valid": true,
+      "error": null,
+      "checked_states": 8,
+      "checked_alternatives": 20,
+      "terminal_cost": null,
+      "root_state": null
+    },
+    "claim_check": {
+      "valid": true,
+      "errors": [],
+      "claimed_cost": null,
+      "event_check": null,
+      "certificate_check": {
+        "valid": true,
+        "error": null,
+        "checked_states": 8,
+        "checked_alternatives": 20,
+        "terminal_cost": null,
+        "root_state": null
+      }
+    }
+  },
+  "contiguous": {
+    "cost": null,
+    "root_state": null,
+    "evaluated_states": 8,
+    "enumerated_alternatives": 20
+  },
+  "oracle": null,
+  "oracle_event_check": null,
+  "fixed64": null,
+  "semantic": {
+    "applicable": false,
+    "valid": true,
+    "patterns": []
+  },
+  "metrics": {
+    "optimizer_states": 8,
+    "certificate_alternatives": 20,
+    "oracle_states": 0,
+    "oracle_expanded_states": 0,
+    "audit_unit_components": {
+      "prepared_optimizer_states": 8,
+      "prepared_certificate_alternatives": 20,
+      "prepared_event_replay_steps": 0,
+      "contiguous_states": 8,
+      "contiguous_alternatives": 20,
+      "oracle_expanded_states": 0,
+      "oracle_event_replay_steps": 0,
+      "typed_semantic_node_evaluations": 0,
+      "fixed64_optimizer_states": 0,
+      "fixed64_event_replay_steps": 0,
+      "fixed64_semantic_node_evaluations": 0
+    },
+    "audit_units": 56,
+    "case_body_cpu_seconds": 0.0004335919999998161
+  },
+  "record_identity": {
+    "index_order": 290,
+    "name": "scaling-n12-q1",
+    "group": "scaling",
+    "instance_file": "campaign/290-scaling-n12-q1.json",
+    "input_sha256": "018ebc85c467fb31e48430443c37c1a848965a8a80cfc16303e7cc2f271acb58"
+  },
+  "evaluation_config": {
+    "exact": true,
+    "certificate": true,
+    "oracle": false,
+    "semantic": false,
+    "oracle_state_cap": 50000,
+    "oracle_case_cpu_cap_seconds": 15.0
+  }
+}

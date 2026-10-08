@@ -1,0 +1,135 @@
+{
+  "schema": 2,
+  "name": "small-s04-p3-b32",
+  "group": "small",
+  "instance_file": "campaign/078-small-s04-p3-b32.json",
+  "status": "checked",
+  "errors": [],
+  "instance": {
+    "nodes": 4,
+    "capacity": 32,
+    "recipes": 6,
+    "contractive": true,
+    "max_degree": 2,
+    "metadata": {
+      "family": "structural",
+      "profile": 3,
+      "shape": "(((), ()),)"
+    }
+  },
+  "prepared": {
+    "exact_mode": true,
+    "cost": null,
+    "root_state": null,
+    "spill_edges": [],
+    "events": [],
+    "event_check": null,
+    "certificate": {
+      "schema": 1,
+      "instance": "small-s04-p3-b32",
+      "exact_mode": true,
+      "contractive": true,
+      "capacity": 32,
+      "root": "v3",
+      "root_state": null,
+      "terminal_cost": null,
+      "states": {
+        "v2|16|32": {
+          "cost": null,
+          "choice": null
+        },
+        "v2|32|32": {
+          "cost": null,
+          "choice": null
+        },
+        "v3|16|32": {
+          "cost": null,
+          "choice": null
+        },
+        "v3|32|32": {
+          "cost": null,
+          "choice": null
+        }
+      }
+    },
+    "certificate_check": {
+      "valid": true,
+      "error": null,
+      "checked_states": 4,
+      "checked_alternatives": 6,
+      "terminal_cost": null,
+      "root_state": null
+    },
+    "claim_check": {
+      "valid": true,
+      "errors": [],
+      "claimed_cost": null,
+      "event_check": null,
+      "certificate_check": {
+        "valid": true,
+        "error": null,
+        "checked_states": 4,
+        "checked_alternatives": 6,
+        "terminal_cost": null,
+        "root_state": null
+      }
+    }
+  },
+  "contiguous": {
+    "cost": null,
+    "root_state": null,
+    "evaluated_states": 4,
+    "enumerated_alternatives": 6
+  },
+  "oracle": {
+    "status": "complete",
+    "cost": null,
+    "events": [],
+    "discovered_states": 6,
+    "expanded_states": 6,
+    "cpu_seconds": 5.274799999999136e-05
+  },
+  "oracle_event_check": null,
+  "fixed64": null,
+  "semantic": {
+    "applicable": false,
+    "valid": true,
+    "patterns": []
+  },
+  "metrics": {
+    "optimizer_states": 4,
+    "certificate_alternatives": 6,
+    "oracle_states": 6,
+    "oracle_expanded_states": 6,
+    "audit_unit_components": {
+      "prepared_optimizer_states": 4,
+      "prepared_certificate_alternatives": 6,
+      "prepared_event_replay_steps": 0,
+      "contiguous_states": 4,
+      "contiguous_alternatives": 6,
+      "oracle_expanded_states": 6,
+      "oracle_event_replay_steps": 0,
+      "typed_semantic_node_evaluations": 0,
+      "fixed64_optimizer_states": 0,
+      "fixed64_event_replay_steps": 0,
+      "fixed64_semantic_node_evaluations": 0
+    },
+    "audit_units": 26,
+    "case_body_cpu_seconds": 0.0003250610000000709
+  },
+  "record_identity": {
+    "index_order": 78,
+    "name": "small-s04-p3-b32",
+    "group": "small",
+    "instance_file": "campaign/078-small-s04-p3-b32.json",
+    "input_sha256": "53f9a7b9b79688942f12655fa7fedbe4d586153ef9c5a2f551cfa7f0bbcd98a6"
+  },
+  "evaluation_config": {
+    "exact": true,
+    "certificate": true,
+    "oracle": true,
+    "semantic": false,
+    "oracle_state_cap": 50000,
+    "oracle_case_cpu_cap_seconds": 15.0
+  }
+}

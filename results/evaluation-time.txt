@@ -1,0 +1,7 @@
+Six sequential reproduce.py invocations
+user CPU seconds: 8.64
+system CPU seconds: 0.44
+external process CPU seconds: 9.08
+sum of per-invocation elapsed seconds: 6.75
+maximum process-tree RSS KiB: 137708
+The campaign cap uses cumulative case-body process CPU from the manifest, not these external totals.

@@ -1,0 +1,127 @@
+{
+  "schema": 2,
+  "name": "small-s05-p2-b16",
+  "group": "small",
+  "instance_file": "campaign/089-small-s05-p2-b16.json",
+  "status": "checked",
+  "errors": [],
+  "instance": {
+    "nodes": 4,
+    "capacity": 16,
+    "recipes": 4,
+    "contractive": true,
+    "max_degree": 2,
+    "metadata": {
+      "family": "structural",
+      "profile": 2,
+      "shape": "((), ((),))"
+    }
+  },
+  "prepared": {
+    "exact_mode": true,
+    "cost": null,
+    "root_state": null,
+    "spill_edges": [],
+    "events": [],
+    "event_check": null,
+    "certificate": {
+      "schema": 1,
+      "instance": "small-s05-p2-b16",
+      "exact_mode": true,
+      "contractive": true,
+      "capacity": 16,
+      "root": "v3",
+      "root_state": null,
+      "terminal_cost": null,
+      "states": {
+        "v3|32|16": {
+          "cost": null,
+          "choice": null
+        },
+        "v3|64|16": {
+          "cost": null,
+          "choice": null
+        }
+      }
+    },
+    "certificate_check": {
+      "valid": true,
+      "error": null,
+      "checked_states": 2,
+      "checked_alternatives": 0,
+      "terminal_cost": null,
+      "root_state": null
+    },
+    "claim_check": {
+      "valid": true,
+      "errors": [],
+      "claimed_cost": null,
+      "event_check": null,
+      "certificate_check": {
+        "valid": true,
+        "error": null,
+        "checked_states": 2,
+        "checked_alternatives": 0,
+        "terminal_cost": null,
+        "root_state": null
+      }
+    }
+  },
+  "contiguous": {
+    "cost": null,
+    "root_state": null,
+    "evaluated_states": 2,
+    "enumerated_alternatives": 0
+  },
+  "oracle": {
+    "status": "complete",
+    "cost": null,
+    "events": [],
+    "discovered_states": 1,
+    "expanded_states": 1,
+    "cpu_seconds": 1.0465000000015046e-05
+  },
+  "oracle_event_check": null,
+  "fixed64": null,
+  "semantic": {
+    "applicable": false,
+    "valid": true,
+    "patterns": []
+  },
+  "metrics": {
+    "optimizer_states": 2,
+    "certificate_alternatives": 0,
+    "oracle_states": 1,
+    "oracle_expanded_states": 1,
+    "audit_unit_components": {
+      "prepared_optimizer_states": 2,
+      "prepared_certificate_alternatives": 0,
+      "prepared_event_replay_steps": 0,
+      "contiguous_states": 2,
+      "contiguous_alternatives": 0,
+      "oracle_expanded_states": 1,
+      "oracle_event_replay_steps": 0,
+      "typed_semantic_node_evaluations": 0,
+      "fixed64_optimizer_states": 0,
+      "fixed64_event_replay_steps": 0,
+      "fixed64_semantic_node_evaluations": 0
+    },
+    "audit_units": 5,
+    "case_body_cpu_seconds": 0.00022231900000002636
+  },
+  "record_identity": {
+    "index_order": 89,
+    "name": "small-s05-p2-b16",
+    "group": "small",
+    "instance_file": "campaign/089-small-s05-p2-b16.json",
+    "input_sha256": "c6b02d36bb2278701768058e5fb2b77c7acf5d9e54519cfe36a24e72c50789ef"
+  },
+  "evaluation_config": {
+    "exact": true,
+    "certificate": true,
+    "oracle": true,
+    "semantic": false,
+    "oracle_state_cap": 50000,
+    "oracle_case_cpu_cap_seconds": 15.0
+  }
+}

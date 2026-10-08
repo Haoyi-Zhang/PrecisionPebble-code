@@ -1,0 +1,71 @@
+{
+  "campaign_source": "fresh six-chunk output directory produced by the current artifact code after the P2 repairs",
+  "command": "for step in 1 2 3 4 5 6; do python3 reproduce.py --output <fresh-dir> --chunk 64; done",
+  "controls": {
+    "negative_passes": 10,
+    "positive_passes": 3,
+    "reference_equation_passes": 5,
+    "valid": true
+  },
+  "differences_from_retained_reference": {
+    "audit_unit_total": "unchanged at 255792 under the repaired explicit component definition",
+    "host_dependent_fields": "case-body CPU, invocation CPU, RSS, and external timing are expected to vary and are not compared as logical evidence",
+    "logical_fields": "none"
+  },
+  "external_process_tree_timing": {
+    "elapsed": "0:06.96",
+    "exit_status": 0,
+    "maximum_resident_set_kib": 137748,
+    "scope": "External timing of the six reproduce.py invocations only; summary and comparison run afterward are excluded.",
+    "swaps": 0,
+    "system_seconds": 0.45,
+    "user_seconds": 8.88
+  },
+  "logical_comparison": {
+    "logical_match": true,
+    "mismatches": [],
+    "reference_cases": 364,
+    "replay_cases": 364,
+    "schema": 2,
+    "validation_errors": []
+  },
+  "manifest": {
+    "campaign_config": {
+      "audit_unit_cap": 600000,
+      "cumulative_case_body_cpu_cap_seconds": 2700.0,
+      "oracle_case_cpu_cap_seconds": 15.0,
+      "oracle_state_cap": 50000
+    },
+    "checked_cases": 364,
+    "complete": true,
+    "cumulative_audit_units": 255792,
+    "cumulative_case_body_cpu_seconds": 2.7025297780000006,
+    "expected_cases": 364,
+    "incomplete_cases": 0,
+    "index_sha256": "b7ffe0cdf6a358c953c2ead01f312bccdf575b4eba679b031551a34a17d4f279",
+    "max_rss_kib": 137748,
+    "terminal_status": "complete",
+    "timing_semantics": {
+      "case_body_cpu_seconds": "Per-case process CPU measured inside evaluate_case; this is the quantity accumulated against the configured 2700-second campaign cap.",
+      "external_timing": "Elapsed time and process-tree resource measurements, when retained, are collected by an external timing command and are not inferred from this manifest.",
+      "invocation_process_cpu_seconds": "Process CPU for one reproduce.py invocation, including resume validation, JSON I/O, case bodies, and manifest writing; it is recorded separately and is not the cap quantity."
+    },
+    "total_invocation_process_cpu_seconds": 3.3015951589999997
+  },
+  "reference_equation": {
+    "passes": 5,
+    "valid": true
+  },
+  "retained_counts": {
+    "applicable_contractive_oracle_agreements": 283,
+    "bellman_certificates": 361,
+    "cases": 364,
+    "complete_configuration_oracles": 286,
+    "integer_fixed64_feasible": 36,
+    "integer_infeasible_both": 6,
+    "integer_preparation_lower_than_contiguous": 0,
+    "integer_typed_feasible": 48,
+    "integer_typed_only": 12
+  },
+  "schema": 3
+}

@@ -1,0 +1,177 @@
+{
+  "schema": 2,
+  "name": "integer-abs-g2-a127-b17",
+  "group": "integer",
+  "instance_file": "campaign/349-integer-abs-g2-a127-b17.json",
+  "status": "checked",
+  "errors": [],
+  "instance": {
+    "nodes": 7,
+    "capacity": 34,
+    "recipes": 15,
+    "contractive": true,
+    "max_degree": 2,
+    "metadata": {
+      "family": "integer-abs",
+      "operator_family": "abs",
+      "groups": 2,
+      "source_length": 2,
+      "bound": 127,
+      "capacity_multiplier": 17,
+      "semantic_patterns": [
+        "zero",
+        "positive",
+        "negative",
+        "alternating",
+        "pseudorandom-9137"
+      ]
+    }
+  },
+  "prepared": {
+    "exact_mode": true,
+    "cost": null,
+    "root_state": null,
+    "spill_edges": [],
+    "events": [],
+    "event_check": null,
+    "certificate": {
+      "schema": 1,
+      "instance": "integer-abs-g2-a127-b17",
+      "exact_mode": true,
+      "contractive": true,
+      "capacity": 34,
+      "root": "r0_0",
+      "root_state": null,
+      "terminal_cost": null,
+      "states": {
+        "e0|8|34": {
+          "cost": null,
+          "choice": null
+        },
+        "e0|16|34": {
+          "cost": null,
+          "choice": null
+        },
+        "e0|32|34": {
+          "cost": null,
+          "choice": null
+        },
+        "e0|64|34": {
+          "cost": null,
+          "choice": null
+        },
+        "e1|8|34": {
+          "cost": null,
+          "choice": null
+        },
+        "e1|16|34": {
+          "cost": null,
+          "choice": null
+        },
+        "e1|32|34": {
+          "cost": null,
+          "choice": null
+        },
+        "e1|64|34": {
+          "cost": null,
+          "choice": null
+        },
+        "r0_0|16|34": {
+          "cost": null,
+          "choice": null
+        },
+        "r0_0|32|34": {
+          "cost": null,
+          "choice": null
+        },
+        "r0_0|64|34": {
+          "cost": null,
+          "choice": null
+        }
+      }
+    },
+    "certificate_check": {
+      "valid": true,
+      "error": null,
+      "checked_states": 11,
+      "checked_alternatives": 56,
+      "terminal_cost": null,
+      "root_state": null
+    },
+    "claim_check": {
+      "valid": true,
+      "errors": [],
+      "claimed_cost": null,
+      "event_check": null,
+      "certificate_check": {
+        "valid": true,
+        "error": null,
+        "checked_states": 11,
+        "checked_alternatives": 56,
+        "terminal_cost": null,
+        "root_state": null
+      }
+    }
+  },
+  "contiguous": {
+    "cost": null,
+    "root_state": null,
+    "evaluated_states": 11,
+    "enumerated_alternatives": 56
+  },
+  "oracle": null,
+  "oracle_event_check": null,
+  "fixed64": {
+    "cost": null,
+    "root_state": null,
+    "events": [],
+    "event_check": null,
+    "semantic": {
+      "applicable": false,
+      "valid": true,
+      "patterns": []
+    },
+    "optimizer_states": 1
+  },
+  "semantic": {
+    "applicable": false,
+    "valid": true,
+    "patterns": []
+  },
+  "metrics": {
+    "optimizer_states": 11,
+    "certificate_alternatives": 56,
+    "oracle_states": 0,
+    "oracle_expanded_states": 0,
+    "audit_unit_components": {
+      "prepared_optimizer_states": 11,
+      "prepared_certificate_alternatives": 56,
+      "prepared_event_replay_steps": 0,
+      "contiguous_states": 11,
+      "contiguous_alternatives": 56,
+      "oracle_expanded_states": 0,
+      "oracle_event_replay_steps": 0,
+      "typed_semantic_node_evaluations": 0,
+      "fixed64_optimizer_states": 1,
+      "fixed64_event_replay_steps": 0,
+      "fixed64_semantic_node_evaluations": 0
+    },
+    "audit_units": 135,
+    "case_body_cpu_seconds": 0.0006937080000000151
+  },
+  "record_identity": {
+    "index_order": 349,
+    "name": "integer-abs-g2-a127-b17",
+    "group": "integer",
+    "instance_file": "campaign/349-integer-abs-g2-a127-b17.json",
+    "input_sha256": "7e3b3562ad6afbf955be7a96a3e4539aad8b62f0ea988df42793b88c4a4505ef"
+  },
+  "evaluation_config": {
+    "exact": true,
+    "certificate": true,
+    "oracle": false,
+    "semantic": true,
+    "oracle_state_cap": 50000,
+    "oracle_case_cpu_cap_seconds": 15.0
+  }
+}

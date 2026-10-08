@@ -1,0 +1,9 @@
+Six sequential reproduce.py invocations after the P2 repairs
+user CPU seconds: 8.88
+system CPU seconds: 0.45
+external process CPU seconds: 9.33
+elapsed seconds: 6.96
+maximum process-tree RSS KiB: 137748
+swaps: 0
+exit status: 0
+The campaign cap uses cumulative case-body process CPU from the manifest, not these external totals.

@@ -1,0 +1,277 @@
+{
+  "schema": 2,
+  "name": "integer-dot-g8-a127-b17",
+  "group": "integer",
+  "instance_file": "campaign/343-integer-dot-g8-a127-b17.json",
+  "status": "checked",
+  "errors": [],
+  "instance": {
+    "nodes": 31,
+    "capacity": 136,
+    "recipes": 59,
+    "contractive": true,
+    "max_degree": 2,
+    "metadata": {
+      "family": "integer-dot",
+      "operator_family": "dot",
+      "groups": 8,
+      "source_length": 8,
+      "bound": 127,
+      "capacity_multiplier": 17,
+      "semantic_patterns": [
+        "zero",
+        "positive",
+        "negative",
+        "alternating",
+        "pseudorandom-9137"
+      ]
+    }
+  },
+  "prepared": {
+    "exact_mode": true,
+    "cost": null,
+    "root_state": null,
+    "spill_edges": [],
+    "events": [],
+    "event_check": null,
+    "certificate": {
+      "schema": 1,
+      "instance": "integer-dot-g8-a127-b17",
+      "exact_mode": true,
+      "contractive": true,
+      "capacity": 136,
+      "root": "r2_0",
+      "root_state": null,
+      "terminal_cost": null,
+      "states": {
+        "e0|16|136": {
+          "cost": null,
+          "choice": null
+        },
+        "e0|32|136": {
+          "cost": null,
+          "choice": null
+        },
+        "e1|16|136": {
+          "cost": null,
+          "choice": null
+        },
+        "e1|32|136": {
+          "cost": null,
+          "choice": null
+        },
+        "e2|16|136": {
+          "cost": null,
+          "choice": null
+        },
+        "e2|32|136": {
+          "cost": null,
+          "choice": null
+        },
+        "e3|16|136": {
+          "cost": null,
+          "choice": null
+        },
+        "e3|32|136": {
+          "cost": null,
+          "choice": null
+        },
+        "e4|16|136": {
+          "cost": null,
+          "choice": null
+        },
+        "e4|32|136": {
+          "cost": null,
+          "choice": null
+        },
+        "e5|16|136": {
+          "cost": null,
+          "choice": null
+        },
+        "e5|32|136": {
+          "cost": null,
+          "choice": null
+        },
+        "e6|16|136": {
+          "cost": null,
+          "choice": null
+        },
+        "e6|32|136": {
+          "cost": null,
+          "choice": null
+        },
+        "e7|16|136": {
+          "cost": null,
+          "choice": null
+        },
+        "e7|32|136": {
+          "cost": null,
+          "choice": null
+        },
+        "r0_0|16|136": {
+          "cost": null,
+          "choice": null
+        },
+        "r0_0|32|136": {
+          "cost": null,
+          "choice": null
+        },
+        "r0_0|64|136": {
+          "cost": null,
+          "choice": null
+        },
+        "r0_1|16|136": {
+          "cost": null,
+          "choice": null
+        },
+        "r0_1|32|136": {
+          "cost": null,
+          "choice": null
+        },
+        "r0_1|64|136": {
+          "cost": null,
+          "choice": null
+        },
+        "r0_2|16|136": {
+          "cost": null,
+          "choice": null
+        },
+        "r0_2|32|136": {
+          "cost": null,
+          "choice": null
+        },
+        "r0_2|64|136": {
+          "cost": null,
+          "choice": null
+        },
+        "r0_3|16|136": {
+          "cost": null,
+          "choice": null
+        },
+        "r0_3|32|136": {
+          "cost": null,
+          "choice": null
+        },
+        "r0_3|64|136": {
+          "cost": null,
+          "choice": null
+        },
+        "r1_0|16|136": {
+          "cost": null,
+          "choice": null
+        },
+        "r1_0|32|136": {
+          "cost": null,
+          "choice": null
+        },
+        "r1_0|64|136": {
+          "cost": null,
+          "choice": null
+        },
+        "r1_1|16|136": {
+          "cost": null,
+          "choice": null
+        },
+        "r1_1|32|136": {
+          "cost": null,
+          "choice": null
+        },
+        "r1_1|64|136": {
+          "cost": null,
+          "choice": null
+        },
+        "r2_0|32|136": {
+          "cost": null,
+          "choice": null
+        },
+        "r2_0|64|136": {
+          "cost": null,
+          "choice": null
+        }
+      }
+    },
+    "certificate_check": {
+      "valid": true,
+      "error": null,
+      "checked_states": 36,
+      "checked_alternatives": 216,
+      "terminal_cost": null,
+      "root_state": null
+    },
+    "claim_check": {
+      "valid": true,
+      "errors": [],
+      "claimed_cost": null,
+      "event_check": null,
+      "certificate_check": {
+        "valid": true,
+        "error": null,
+        "checked_states": 36,
+        "checked_alternatives": 216,
+        "terminal_cost": null,
+        "root_state": null
+      }
+    }
+  },
+  "contiguous": {
+    "cost": null,
+    "root_state": null,
+    "evaluated_states": 36,
+    "enumerated_alternatives": 216
+  },
+  "oracle": null,
+  "oracle_event_check": null,
+  "fixed64": {
+    "cost": null,
+    "root_state": null,
+    "events": [],
+    "event_check": null,
+    "semantic": {
+      "applicable": false,
+      "valid": true,
+      "patterns": []
+    },
+    "optimizer_states": 7
+  },
+  "semantic": {
+    "applicable": false,
+    "valid": true,
+    "patterns": []
+  },
+  "metrics": {
+    "optimizer_states": 36,
+    "certificate_alternatives": 216,
+    "oracle_states": 0,
+    "oracle_expanded_states": 0,
+    "audit_unit_components": {
+      "prepared_optimizer_states": 36,
+      "prepared_certificate_alternatives": 216,
+      "prepared_event_replay_steps": 0,
+      "contiguous_states": 36,
+      "contiguous_alternatives": 216,
+      "oracle_expanded_states": 0,
+      "oracle_event_replay_steps": 0,
+      "typed_semantic_node_evaluations": 0,
+      "fixed64_optimizer_states": 7,
+      "fixed64_event_replay_steps": 0,
+      "fixed64_semantic_node_evaluations": 0
+    },
+    "audit_units": 511,
+    "case_body_cpu_seconds": 0.002535167000000005
+  },
+  "record_identity": {
+    "index_order": 343,
+    "name": "integer-dot-g8-a127-b17",
+    "group": "integer",
+    "instance_file": "campaign/343-integer-dot-g8-a127-b17.json",
+    "input_sha256": "1537678834451de31059daec3d3db4a0aff5eedd639ada402a6c8ecb118ec149"
+  },
+  "evaluation_config": {
+    "exact": true,
+    "certificate": true,
+    "oracle": false,
+    "semantic": true,
+    "oracle_state_cap": 50000,
+    "oracle_case_cpu_cap_seconds": 15.0
+  }
+}

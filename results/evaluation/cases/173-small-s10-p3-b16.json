@@ -1,0 +1,156 @@
+{
+  "schema": 2,
+  "name": "small-s10-p3-b16",
+  "group": "small",
+  "instance_file": "campaign/173-small-s10-p3-b16.json",
+  "status": "checked",
+  "errors": [],
+  "instance": {
+    "nodes": 5,
+    "capacity": 16,
+    "recipes": 9,
+    "contractive": true,
+    "max_degree": 2,
+    "metadata": {
+      "family": "structural",
+      "profile": 3,
+      "shape": "((((),), ()),)"
+    }
+  },
+  "prepared": {
+    "exact_mode": true,
+    "cost": null,
+    "root_state": null,
+    "spill_edges": [],
+    "events": [],
+    "event_check": null,
+    "certificate": {
+      "schema": 1,
+      "instance": "small-s10-p3-b16",
+      "exact_mode": true,
+      "contractive": true,
+      "capacity": 16,
+      "root": "v4",
+      "root_state": null,
+      "terminal_cost": null,
+      "states": {
+        "v1|16|8": {
+          "cost": null,
+          "choice": null
+        },
+        "v1|16|16": {
+          "cost": null,
+          "choice": null
+        },
+        "v2|16|16": {
+          "cost": {
+            "io": 8,
+            "work": [
+              0,
+              1
+            ]
+          },
+          "choice": {
+            "kind": "source",
+            "state": 16
+          }
+        },
+        "v3|16|16": {
+          "cost": null,
+          "choice": null
+        },
+        "v3|32|16": {
+          "cost": null,
+          "choice": null
+        },
+        "v4|16|16": {
+          "cost": null,
+          "choice": null
+        },
+        "v4|32|16": {
+          "cost": null,
+          "choice": null
+        }
+      }
+    },
+    "certificate_check": {
+      "valid": true,
+      "error": null,
+      "checked_states": 7,
+      "checked_alternatives": 10,
+      "terminal_cost": null,
+      "root_state": null
+    },
+    "claim_check": {
+      "valid": true,
+      "errors": [],
+      "claimed_cost": null,
+      "event_check": null,
+      "certificate_check": {
+        "valid": true,
+        "error": null,
+        "checked_states": 7,
+        "checked_alternatives": 10,
+        "terminal_cost": null,
+        "root_state": null
+      }
+    }
+  },
+  "contiguous": {
+    "cost": null,
+    "root_state": null,
+    "evaluated_states": 7,
+    "enumerated_alternatives": 10
+  },
+  "oracle": {
+    "status": "complete",
+    "cost": null,
+    "events": [],
+    "discovered_states": 4,
+    "expanded_states": 4,
+    "cpu_seconds": 3.533299999991524e-05
+  },
+  "oracle_event_check": null,
+  "fixed64": null,
+  "semantic": {
+    "applicable": false,
+    "valid": true,
+    "patterns": []
+  },
+  "metrics": {
+    "optimizer_states": 7,
+    "certificate_alternatives": 10,
+    "oracle_states": 4,
+    "oracle_expanded_states": 4,
+    "audit_unit_components": {
+      "prepared_optimizer_states": 7,
+      "prepared_certificate_alternatives": 10,
+      "prepared_event_replay_steps": 0,
+      "contiguous_states": 7,
+      "contiguous_alternatives": 10,
+      "oracle_expanded_states": 4,
+      "oracle_event_replay_steps": 0,
+      "typed_semantic_node_evaluations": 0,
+      "fixed64_optimizer_states": 0,
+      "fixed64_event_replay_steps": 0,
+      "fixed64_semantic_node_evaluations": 0
+    },
+    "audit_units": 38,
+    "case_body_cpu_seconds": 0.0003505200000000208
+  },
+  "record_identity": {
+    "index_order": 173,
+    "name": "small-s10-p3-b16",
+    "group": "small",
+    "instance_file": "campaign/173-small-s10-p3-b16.json",
+    "input_sha256": "1703d5f1d9d86e77602117d818ed956242d425c62a136bdc3c78933a026beb6a"
+  },
+  "evaluation_config": {
+    "exact": true,
+    "certificate": true,
+    "oracle": true,
+    "semantic": false,
+    "oracle_state_cap": 50000,
+    "oracle_case_cpu_cap_seconds": 15.0
+  }
+}

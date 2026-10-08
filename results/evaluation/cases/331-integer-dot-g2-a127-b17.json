@@ -1,0 +1,157 @@
+{
+  "schema": 2,
+  "name": "integer-dot-g2-a127-b17",
+  "group": "integer",
+  "instance_file": "campaign/331-integer-dot-g2-a127-b17.json",
+  "status": "checked",
+  "errors": [],
+  "instance": {
+    "nodes": 7,
+    "capacity": 34,
+    "recipes": 11,
+    "contractive": true,
+    "max_degree": 2,
+    "metadata": {
+      "family": "integer-dot",
+      "operator_family": "dot",
+      "groups": 2,
+      "source_length": 2,
+      "bound": 127,
+      "capacity_multiplier": 17,
+      "semantic_patterns": [
+        "zero",
+        "positive",
+        "negative",
+        "alternating",
+        "pseudorandom-9137"
+      ]
+    }
+  },
+  "prepared": {
+    "exact_mode": true,
+    "cost": null,
+    "root_state": null,
+    "spill_edges": [],
+    "events": [],
+    "event_check": null,
+    "certificate": {
+      "schema": 1,
+      "instance": "integer-dot-g2-a127-b17",
+      "exact_mode": true,
+      "contractive": true,
+      "capacity": 34,
+      "root": "r0_0",
+      "root_state": null,
+      "terminal_cost": null,
+      "states": {
+        "e0|16|34": {
+          "cost": null,
+          "choice": null
+        },
+        "e0|32|34": {
+          "cost": null,
+          "choice": null
+        },
+        "e1|16|34": {
+          "cost": null,
+          "choice": null
+        },
+        "e1|32|34": {
+          "cost": null,
+          "choice": null
+        },
+        "r0_0|32|34": {
+          "cost": null,
+          "choice": null
+        },
+        "r0_0|64|34": {
+          "cost": null,
+          "choice": null
+        }
+      }
+    },
+    "certificate_check": {
+      "valid": true,
+      "error": null,
+      "checked_states": 6,
+      "checked_alternatives": 24,
+      "terminal_cost": null,
+      "root_state": null
+    },
+    "claim_check": {
+      "valid": true,
+      "errors": [],
+      "claimed_cost": null,
+      "event_check": null,
+      "certificate_check": {
+        "valid": true,
+        "error": null,
+        "checked_states": 6,
+        "checked_alternatives": 24,
+        "terminal_cost": null,
+        "root_state": null
+      }
+    }
+  },
+  "contiguous": {
+    "cost": null,
+    "root_state": null,
+    "evaluated_states": 6,
+    "enumerated_alternatives": 24
+  },
+  "oracle": null,
+  "oracle_event_check": null,
+  "fixed64": {
+    "cost": null,
+    "root_state": null,
+    "events": [],
+    "event_check": null,
+    "semantic": {
+      "applicable": false,
+      "valid": true,
+      "patterns": []
+    },
+    "optimizer_states": 1
+  },
+  "semantic": {
+    "applicable": false,
+    "valid": true,
+    "patterns": []
+  },
+  "metrics": {
+    "optimizer_states": 6,
+    "certificate_alternatives": 24,
+    "oracle_states": 0,
+    "oracle_expanded_states": 0,
+    "audit_unit_components": {
+      "prepared_optimizer_states": 6,
+      "prepared_certificate_alternatives": 24,
+      "prepared_event_replay_steps": 0,
+      "contiguous_states": 6,
+      "contiguous_alternatives": 24,
+      "oracle_expanded_states": 0,
+      "oracle_event_replay_steps": 0,
+      "typed_semantic_node_evaluations": 0,
+      "fixed64_optimizer_states": 1,
+      "fixed64_event_replay_steps": 0,
+      "fixed64_semantic_node_evaluations": 0
+    },
+    "audit_units": 61,
+    "case_body_cpu_seconds": 0.0005211229999999567
+  },
+  "record_identity": {
+    "index_order": 331,
+    "name": "integer-dot-g2-a127-b17",
+    "group": "integer",
+    "instance_file": "campaign/331-integer-dot-g2-a127-b17.json",
+    "input_sha256": "6e139013bb9e27382ea9bcbde4156f7fa2552aba128b570c6af67839458af772"
+  },
+  "evaluation_config": {
+    "exact": true,
+    "certificate": true,
+    "oracle": false,
+    "semantic": true,
+    "oracle_state_cap": 50000,
+    "oracle_case_cpu_cap_seconds": 15.0
+  }
+}

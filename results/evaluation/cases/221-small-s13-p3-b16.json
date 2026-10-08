@@ -1,0 +1,173 @@
+{
+  "schema": 2,
+  "name": "small-s13-p3-b16",
+  "group": "small",
+  "instance_file": "campaign/221-small-s13-p3-b16.json",
+  "status": "checked",
+  "errors": [],
+  "instance": {
+    "nodes": 5,
+    "capacity": 16,
+    "recipes": 9,
+    "contractive": true,
+    "max_degree": 2,
+    "metadata": {
+      "family": "structural",
+      "profile": 3,
+      "shape": "(((),), ((),))"
+    }
+  },
+  "prepared": {
+    "exact_mode": true,
+    "cost": null,
+    "root_state": null,
+    "spill_edges": [],
+    "events": [],
+    "event_check": null,
+    "certificate": {
+      "schema": 1,
+      "instance": "small-s13-p3-b16",
+      "exact_mode": true,
+      "contractive": true,
+      "capacity": 16,
+      "root": "v4",
+      "root_state": null,
+      "terminal_cost": null,
+      "states": {
+        "v1|16|12": {
+          "cost": null,
+          "choice": null
+        },
+        "v1|16|16": {
+          "cost": null,
+          "choice": null
+        },
+        "v2|16|16": {
+          "cost": {
+            "io": 8,
+            "work": [
+              0,
+              1
+            ]
+          },
+          "choice": {
+            "kind": "source",
+            "state": 16
+          }
+        },
+        "v3|16|16": {
+          "cost": {
+            "io": 8,
+            "work": [
+              34,
+              1
+            ]
+          },
+          "choice": {
+            "kind": "op",
+            "recipe": "p16-v3",
+            "output": 16,
+            "children": [
+              {
+                "id": "v2",
+                "operand_index": 0,
+                "state": 16,
+                "budget": 16,
+                "residual_before": 16,
+                "cut": false,
+                "weight": 8
+              }
+            ]
+          }
+        },
+        "v4|16|16": {
+          "cost": null,
+          "choice": null
+        },
+        "v4|32|16": {
+          "cost": null,
+          "choice": null
+        }
+      }
+    },
+    "certificate_check": {
+      "valid": true,
+      "error": null,
+      "checked_states": 6,
+      "checked_alternatives": 9,
+      "terminal_cost": null,
+      "root_state": null
+    },
+    "claim_check": {
+      "valid": true,
+      "errors": [],
+      "claimed_cost": null,
+      "event_check": null,
+      "certificate_check": {
+        "valid": true,
+        "error": null,
+        "checked_states": 6,
+        "checked_alternatives": 9,
+        "terminal_cost": null,
+        "root_state": null
+      }
+    }
+  },
+  "contiguous": {
+    "cost": null,
+    "root_state": null,
+    "evaluated_states": 6,
+    "enumerated_alternatives": 9
+  },
+  "oracle": {
+    "status": "complete",
+    "cost": null,
+    "events": [],
+    "discovered_states": 10,
+    "expanded_states": 10,
+    "cpu_seconds": 9.753499999998194e-05
+  },
+  "oracle_event_check": null,
+  "fixed64": null,
+  "semantic": {
+    "applicable": false,
+    "valid": true,
+    "patterns": []
+  },
+  "metrics": {
+    "optimizer_states": 6,
+    "certificate_alternatives": 9,
+    "oracle_states": 10,
+    "oracle_expanded_states": 10,
+    "audit_unit_components": {
+      "prepared_optimizer_states": 6,
+      "prepared_certificate_alternatives": 9,
+      "prepared_event_replay_steps": 0,
+      "contiguous_states": 6,
+      "contiguous_alternatives": 9,
+      "oracle_expanded_states": 10,
+      "oracle_event_replay_steps": 0,
+      "typed_semantic_node_evaluations": 0,
+      "fixed64_optimizer_states": 0,
+      "fixed64_event_replay_steps": 0,
+      "fixed64_semantic_node_evaluations": 0
+    },
+    "audit_units": 40,
+    "case_body_cpu_seconds": 0.000418739999999973
+  },
+  "record_identity": {
+    "index_order": 221,
+    "name": "small-s13-p3-b16",
+    "group": "small",
+    "instance_file": "campaign/221-small-s13-p3-b16.json",
+    "input_sha256": "b87ff002b65a897684e54fc9320d8798abc9acad677651750278ffe83f42da6a"
+  },
+  "evaluation_config": {
+    "exact": true,
+    "certificate": true,
+    "oracle": true,
+    "semantic": false,
+    "oracle_state_cap": 50000,
+    "oracle_case_cpu_cap_seconds": 15.0
+  }
+}
